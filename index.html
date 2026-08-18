@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ Glam Beauty Studio | Luxury Nails & Custom Wigs</title>
+    <script>alert("Welcome to C.J Glam Official website");</script>
+       <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --bs-primary: #db2777;
+            --bs-primary-rgb: 219, 39, 119;
+            --bg-light: #fff9fb;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: #1f2937;
+            overflow-x: hidden;
+        }
+        .navbar-brand {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #940d24, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-section {
+            padding: 120px 0 80px;
+            background: radial-gradient(circle at 50% 20%, rgba(219, 39, 119, 0.08), transparent 60%);
+        }
+        .custom-card {
+            border: 1px solid rgba(219, 39, 119, 0.12);
+            border-radius: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #ffffff;
+        }
+        .custom-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(219, 39, 119, 0.1);
+        }
+        .portfolio-img-wrapper {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f3f4f6;
+        }
+        .portfolio-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .custom-card:hover .portfolio-img-wrapper img {
+            transform: scale(1.08);
+        }
+        .btn-whatsapp {
+            background-color: #10b981;
+            color: #fff;
+            border: none;
+        }
+        .btn-whatsapp:hover {
+            background-color: #059669;
+            color: #fff;
+        }
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: #fff;
+            border: none;
+        }
+        .btn-instagram:hover {
+            opacity: 0.9;
+            color: #fff;
+        }
+        .btn-tiktok {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+        }
+        .btn-tiktok:hover {
+            background-color: #262626;
+            color: #fff;
+        }
+        .floating-chat {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Notification Banner -->
+    <div class="bg-gradient-to-r text-white text-center py-2 px-3 small fw-medium" style="background: linear-gradient(90deg, #db2777, #e11d48, #9333ea);">
+       <style>
+.float-text {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: float 3s ease-in-out infinite;
+  float: center;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+ 50% { transform: translateY(-15px); } /* goes up */
+ 100% { transform: translateY(0px); } /* comes back down */
+}
+</style>
+
+<h6 class="float-text">✨ Welcome to CJ Glam! Book your luxury nail session or custom wig unit today via WhatsApp. ✨</h6>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white bg-opacity-90 backdrop-blur sticky-top border-bottom border-pink-subtle shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fs-3 d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-stars text-pink"></i> CJ GLAM
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#portfolio">Our Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge bg-pink bg-opacity-10 text-pink px-3 py-2 rounded-pill mb-3 fw-bold text-uppercase tracking-wider" style="background-color: #fce7f3; color: #db2777;">
+                        <i class="bi bi-stars"></i> Luxury Beauty & Glam Studio
+                    </span>
+                    <h1 class="display-4 fw-extrabold mb-4 text-dark lh-sm">
+                        Elevate Your Look With <span style="background: linear-gradient(135deg, #db2777, #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CJ Glam.</span>
+                    </h1>
+                    <p class="lead text-secondary mb-5 fs-6">
+                        Your premier destination for stunning, flawless nail artistry and custom luxury wig units. Crafted to absolute perfection for the modern queen.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20want%20to%20book%20an%20appointment!" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg rounded-pill px-5 fw-bold shadow-lg" style="background-color: #db2777; border: none;">
+                            Book Appointment <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline-dark btn-lg rounded-pill px-4 fw-bold">
+                            View Gallery
+                        </a>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-4 text-muted small fw-medium">
+                        <div><i class="bi bi-star-fill text-warning"></i> 4.9/5 Rating</div>
+                        <div><i class="bi bi-heart-fill text-danger"></i> 500+ Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto" style="max-width: 450px;">
+                        <div class="rounded-4 overflow-hidden shadow-lg border border-4 border-white bg-white">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop" alt="CJ Glam Nails & Wigs" class="w-100 object-fit-cover" style="height: 420px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <span class="text-uppercase fw-bold small text-pink" style="color: #db2777;">Our Expertise</span>
+                <h2 class="fw-extrabold display-6 text-dark mt-1">Luxurious Beauty Services</h2>
+                <p class="text-secondary">Designed to bring out your absolute best confidence and glamour.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Nails Service -->
+                <div class="col-md-6">
+                    <div class="custom-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="rounded-4 d-inline-flex align-items-center justify-content-center mb-4 text-white shadow-sm" style="width: 64px; height: 64px; background-color: #db2777;">
+                                <i class="bi bi-magic fs-3"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Nail Art & Manicure Studio</h3>
+                            <p class="text-secondary mb-4">
+                                From sleek minimalist French tips to jaw-dropping 3D acrylic extensions, chrome glazes, and long-lasting gel manicures. Your hands deserve masterpiece treatment.
+                            </p>
+                            <ul class="list-unstyled text-secondary small fw-medium mb-4 d-flex flex-column gap-2">
+                                <li><i class="bi bi-check2 text-pink fw-bold me-2" style="color: #db2777;"></i> Custom Acrylic Extensions & Sculpting</li>
+                                <li><i class="bi bi-check2 text-pink fw-bold me-2" style="color: #db2777;"></i> Gel Manicures & Luxury Pedicures</li>
+                                <li><i class="bi bi-check2 text-pink fw-bold me-2" style="color: #db2777;"></i> Rhinestone & 3D Nail Art Design</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20want%20to%20book%20a%20nail%20session!" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-2.5 fw-bold text-sm w-100">
+                            Book Nail Session <i class="bi bi-chevron-right small"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Wigs Service -->
+                <div class="col-md-6">
+                    <div class="custom-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="rounded-4 d-inline-flex align-items-center justify-content-center mb-4 text-white shadow-sm" style="width: 64px; height: 64px; background-color: #9333ea;">
+                                <i class="bi bi-scissors fs-3"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3">Wig Styling & Custom Units</h3>
+                            <p class="text-secondary mb-4">
+                                Experience premium human hair units, flawless lace melting, custom coloring, styling, and revitalizing. Walk out looking like a celebrity every single day.
+                            </p>
+                            <ul class="list-unstyled text-secondary small fw-medium mb-4 d-flex flex-column gap-2">
+                                <li><i class="bi bi-check2 fw-bold me-2" style="color: #9333ea;"></i> HD Lace Closure & Frontal Installs</li>
+                                <li><i class="bi bi-check2 fw-bold me-2" style="color: #9333ea;"></i> Custom Coloring & Bone Straight Units</li>
+                                <li><i class="bi bi-check2 fw-bold me-2" style="color: #9333ea;"></i> Wig Revamp, Washing & Precision Styling</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20want%20to%20order%20or%20style%20a%20wig!" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-pill py-2.5 fw-bold text-sm w-100">
+                            Book Wig Service <i class="bi bi-chevron-right small"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (Nails and Wigs) -->
+    <section id="portfolio" class="py-5" style="background-color: #fff2f6;">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <span class="text-uppercase fw-bold small text-pink" style="color: #db2777;">Our Masterpieces</span>
+                <h2 class="fw-extrabold display-6 text-dark mt-1">Gallery of Painted Nails & Wigs</h2>
+                <p class="text-secondary">Browse through our latest client transformations.</p>
+                
+                <!-- Filter Buttons -->
+                <div class="d-flex justify-content-center gap-2 mt-4" id="portfolioFilters">
+                    <button class="btn btn-dark rounded-pill px-4 py-2 text-xs fw-bold filter-btn active" data-filter="all">All Work</button>
+                    <button class="btn btn-white bg-white border border-pink-subtle rounded-pill px-4 py-2 text-xs fw-bold filter-btn" data-filter="nails">Painted Nails</button>
+                    <button class="btn btn-white bg-white border border-pink-subtle rounded-pill px-4 py-2 text-xs fw-bold filter-btn" data-filter="wigs">Wigs & Units</button>
+                </div>
+            </div>
+
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Item 1: Nails -->
+                <div class="col-md-4 portfolio-item" data-category="nails">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=800&auto=format&fit=crop" alt="Luxury Ombré Acrylics">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Nail Art</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">Luxury Ombré Acrylics & Rhinestones</h4>
+                            <p class="text-secondary small mb-3">Meticulously hand-painted glam set featuring custom encapsulations.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20Luxury%20Ombré%20Acrylics" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Wigs -->
+                <div class="col-md-4 portfolio-item" data-category="wigs">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" alt="Bone Straight Unit">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Wigs & Styling</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">Bone Straight 30" HD Lace Unit</h4>
+                            <p class="text-secondary small mb-3">Custom melted lace frontal unit with ultra-glossy bone straight human hair.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20Bone%20Straight%2030%20Inch" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Nails -->
+                <div class="col-md-4 portfolio-item" data-category="nails">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop" alt="French Tip Matte">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Nail Care</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">French Tip Matte Glamour Set</h4>
+                            <p class="text-secondary small mb-3">Clean modern French manicure with velvety matte topcoat.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20French%20Tip%20Matte" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Wigs -->
+                <div class="col-md-4 portfolio-item" data-category="wigs">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Bouncy Curls Custom Unit">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Wig Installation</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">Bouncy Curls Custom Colored Unit</h4>
+                            <p class="text-secondary small mb-3">Luxurious voluminous curls custom-toned and installed to absolute perfection.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20Bouncy%20Curls" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Nails -->
+                <div class="col-md-4 portfolio-item" data-category="nails">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                        <img src="C.J glam.jpeg" alt="Img5">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Nail Art</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">Chrome Glazed Velvet Manicure</h4>
+                            <p class="text-secondary small mb-3">Cat-eye velvet effect paired with holographic chrome finish.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20Chrome%20Glazed" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Wigs -->
+                <div class="col-md-4 portfolio-item" data-category="wigs">
+                    <div class="custom-card overflow-hidden h-100">
+                        <div class="portfolio-img-wrapper">
+                            <img src="c.j GLAM 2.jpeg" alt="Bohemian Knotless Braids Wig">
+                            <span class="position-absolute top-3 start-3 badge bg-white text-dark shadow-sm px-3 py-1 rounded-pill fw-bold small">Braided Wigs</span>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="fw-bold h5 mb-2">Bohemian Knotless Braids Wig Unit</h4>
+                            <p class="text-secondary small mb-3">Lightweight, natural-looking hand-crafted braided wig with soft curls.</p>
+                            <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20love%20this%20style:%20Bohemian%20Braids" target="_blank" rel="noopener noreferrer" class="text-pink fw-bold text-decoration-none small d-flex align-items-center gap-1" style="color: #db2777;">
+                                Inquire via WhatsApp <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto" style="max-width: 450px;">
+                        <div class="rounded-4 overflow-hidden shadow-lg border border-4 border-pink-subtle">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="CJ Glam Studio" class="w-100 object-fit-cover" style="height: 400px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-uppercase fw-bold small text-pink" style="color: #db2777;">About CJ Glam</span>
+                    <h2 class="fw-extrabold display-6 text-dark mt-1 mb-4">Where Passion Meets Luxury Beauty</h2>
+                    <p class="text-secondary mb-4 lh-lg">
+                        CJ Glam is more than just a beauty studio—it's an experience. We specialize in transforming your personal style with immaculate attention to detail. Whether you are getting stunning acrylic nails painted to perfection or a custom-styled HD wig unit that turns heads wherever you go, our expert touch ensures you look and feel like royalty.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-3 rounded-4 bg-light border border-pink-subtle">
+                                <i class="bi bi-award-fill text-pink fs-4 mb-2 d-block" style="color: #db2777;"></i>
+                                <h5 class="fw-bold h6 mb-1">Premium Quality</h5>
+                                <p class="text-secondary small mb-0">Top-grade hair and long-lasting nail products.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 rounded-4 bg-light border border-purple-subtle">
+                                <i class="bi bi-clock-fill fs-4 mb-2 d-block" style="color: #9333ea;"></i>
+                                <h5 class="fw-bold h6 mb-1">Expert Craft</h5>
+                                <p class="text-secondary small mb-0">Meticulous precision on every appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social & Contact CTA Section -->
+    <section id="contact" class="py-5 text-white text-center" style="background: linear-gradient(135deg, #db2777, #e11d48, #9333ea);">
+        <div class="container py-4" style="max-width: 800px;">
+            <span class="badge bg-white text-dark px-4 py-2 rounded-pill fw-bold text-uppercase mb-3 shadow-sm">Get In Touch</span>
+            <h2 class="display-5 fw-extrabold mb-4">Ready For Your Glam Transformation?</h2>
+            <p class="lead fs-6 text-white-50 mb-5">
+                Reach out to us directly to book your nail session, order custom wigs, or make inquiries. Connect with us on WhatsApp, Instagram, and TikTok!
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/2349162870924?text=HelloVicTech" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg rounded-pill px-4 py-3 fw-bold d-flex align-items-center gap-2 shadow">
+                    <i class="bi bi-whatsapp fs-5"></i> WhatsApp Page
+                </a>
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/victech91?utm_source=qr&igsh=MXhmdmRxaHphNmhrdw==" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-lg rounded-pill px-4 py-3 fw-bold d-flex align-items-center gap-2 shadow">
+                    <i class="bi bi-instagram fs-5"></i> Instagram Feed
+                </a>
+                <!-- TikTok Button -->
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="btn btn-tiktok btn-lg rounded-pill px-4 py-3 fw-bold d-flex align-items-center gap-2 shadow border border-secondary">
+                    <i class="bi bi-tiktok fs-5"></i> TikTok Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 py-5 text-center border-top border-secondary">
+        <div class="container">
+            <div class="fs-4 fw-extrabold text-white mb-2 d-flex align-items-center justify-content-center gap-2">
+                <i class="bi bi-stars" style="color: #db2777;"></i> CJ GLAM
+            </div>
+            <p class="small mb-4 max-w-sm mx-auto">Luxury Nail Artistry & Custom Wig Units. Designed to bring out your ultimate confidence and glamour.</p>
+            <div class="d-flex justify-content-center gap-4 mb-4 small fw-semibold">
+                <a href="https://wa.me/2349162870924?text=HelloVicTech" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">WhatsApp</a>
+                <a href="https://www.instagram.com/victech91?utm_source=qr&igsh=MXhmdmRxaHphNmhrdw==" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">Instagram</a>
+                <a href="https://www.tiktok.com/@diva71110?_r=1&_d=efh50816ggb2b8&sec_uid=MS4wLjABAAAA6RInp7kIlAY9eG1qhV-D2OLto2AhhH6B59jdYkH6v35z6bOlCMErQBylj8zAOclC&share_author_id=7205578978866070534&sharer_language=en&source=h5_m&u_code=ea09ae9h55cjge&timestamp=1786995919&user_id=7276047291105854470&sec_user_id=MS4wLjABAAAAO7daoZQ2Y2mJuEEdlSE0rWjeqGpGSQ0rrbwqU-HUrESvL70RDFwy72FEjKO8X6Ro&item_author_type=2&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7670904567940843282&share_link_id=24d92854-7098-484e-8abe-3b949e882e93&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&share_enter_from=others_homepage&item_author_type=2&enable_checksum=1" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">TikTok</a>
+            </div>
+            <p class="small text-muted mb-0">&copy; <span id="currentYear"></span> CJ Glam Beauty Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-chat">
+        <a href="https://wa.me/2349162870924?text=Hello%20CJ%20Glam,%20I%20would%20like%20to%20book%20an%20appointment!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp rounded-circle shadow-lg d-flex align-items-center justify-content-center text-white" style="width: 60px; height: 60px; font-size: 28px;" title="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Portfolio filtering logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('btn-dark', 'active');
+                    b.classList.add('btn-white', 'bg-white', 'border', 'border-pink-subtle');
+                });
+                btn.classList.remove('btn-white', 'bg-white', 'border', 'border-pink-subtle');
+                btn.classList.add('btn-dark', 'active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
